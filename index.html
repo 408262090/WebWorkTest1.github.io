@@ -45,15 +45,15 @@
     <main>
         <div class="menu-item">
             <h2>紅醬義大利麵 - 300元</h2>
-            <button onclick="addToCart('紅醬義大利麵', 300)">加入购物车</button>
+            <button onclick="addToCart('紅醬義大利麵', 300)">加入購物車</button>
         </div>
         <div class="menu-item">
             <h2>青醬義大利麵 - 310元</h2>
-            <button onclick="addToCart('青醬義大利麵', 310)">加入购物车</button>
+            <button onclick="addToCart('青醬義大利麵', 310)">加入購物車</button>
         </div>
         <div class="menu-item">
             <h2>白醬義大利麵 - 320元</h2>
-            <button onclick="addToCart('白醬義大利麵', 320)">加入购物车</button>
+            <button onclick="addToCart('白醬義大利麵', 320)">加入購物車</button>
         </div>
     </main>
     <aside>
@@ -90,23 +90,3 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     $_SESSION['cart'] = $cart;
 }
 ?>
-
-/*<!DOCTYPE html>
-<html>
-<head>
-    <title>購物車</title>
-</head>
-<body>
-    <h1>您的購物車</h1>
-    <ul>
-        <?php foreach ($cart as $item): ?>
-            <li><?= $item['item'] ?> - <?= $item['price'] ?>元</li>
-        <?php endforeach; ?>
-    </ul>
-    <p>总价: <?= array_sum(array_column($cart, 'price')) ?>元</p>
-    <form action="cart.php" method="post">
-        <input type="hidden" name="action" value="reset">
-        <input type="submit" value="清空購物車">
-    </form>
-</body>
-</html>*/
