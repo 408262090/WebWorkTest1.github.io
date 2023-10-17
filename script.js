@@ -18,5 +18,5 @@ function updateCartDisplay() {
         cartList.appendChild(li);
     });
     
-    totalElement.innerText = `总价: ${total}元`;
+    totalElement.innerText = `總價: ${total}元`;
 }
